@@ -1,7 +1,7 @@
 import re
 I = open(0).readlines()
 
-# day 1
+# part 1
 G = [0] * 1000
 for l in I:
 	x0, y0, x1, y1 = map(int, re.findall(r"(\d+)", l))
@@ -17,7 +17,7 @@ for l in I:
 			G[y] ^= mask
 print(sum(r.bit_count() for r in G))
 
-# day 2
+# part 2
 G = [[0]*1000 for _ in range(1000)]
 for l in I:
 	x0, y0, x1, y1 = map(int, re.findall(r"(\d+)", l))

@@ -50,7 +50,7 @@ for l in open(0):
 		F[f] = lambda e: ~V[e]
 		A[f] = (e,)
 		D[e].append(f)
-V['b'] = 46065 # day 2 insertion
+V['b'] = 46065 # part 2 insertion
 while S:
 	u = S.pop()
 	for v in D[u]:
